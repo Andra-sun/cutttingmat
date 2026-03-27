@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./about.css";
 import clip from "../assets/clipboard.png";
 import clipTop from "../assets/clipboardT.png";
+import me from "../assets/me.jpg";
 
 type ButtonProps = {
     onClick: () => void;
@@ -34,7 +35,7 @@ export function About() {
                             className="absolute inset-0 w-full h-full rotate-6 z-20"
                         />
                         <div
-                            className="absolute z-10 bg-amber-500 overflow-auto rotate-6 shadow p-4"
+                            className="absolute z-10 bg-amber-500 overflow-auto rotate-6 shadow p-4 text-left"
                             style={{
                                 top: "calc(26 / 174 * 100%)",
                                 left: "calc(15 / 140 * 100%)",
@@ -43,14 +44,39 @@ export function About() {
                                 paddingTop: "calc(10 / 174 * 100%)",
                             }}
                         >
-                            <h1 className="text-sm sm:text-base">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Expedita, at. Facere neque
-                                nihil voluptatibus impedit molestias iusto ex
-                                ducimus eos quidem sunt numquam deleniti,
-                                incidunt, eligendi temporibus assumenda vitae.
-                                In.
-                            </h1>
+                            <div className="flex items-center gap-3 mb-3">
+                                <img
+                                    src={me}
+                                    alt="me"
+                                    className="w-2/4 shadow-lg rounded-ee-full shrink-0"
+                                />
+                                <h1 className="text-2xl sm:text-4xl font-bold">
+                                    Olá, tudo bem?
+                                </h1>
+                            </div>
+
+                            <p className="text-sm sm:text-base">
+                                Me chamo <i>Camile</i> porém na internet sou
+                                conhecida como <b>ANDRA</b>.
+                            </p>
+                            <p className="text-sm sm:text-base">
+                                Estudo programação des do ensino médio e agora
+                                estou me graduando em Análise e Desenvolvimento
+                                de sistemas.
+                            </p>
+                            <p className="text-sm sm:text-base">
+                                Des do inicio o que eu mais gosto de fazer é o{" "}
+                                <b>FRONTEND</b>.
+                            </p>
+                            <p className="text-sm sm:text-base">
+                                Adoro me desafiar e fazer/ aprender coisas
+                                novas.
+                            </p>
+                            <hr className="mt-10 mb-5 border-dashed" />
+                            <span >
+                                Dê uma explorada pelo meu protifolio para saber
+                                mais.
+                            </span>
                         </div>
                         <img
                             src={clip}
