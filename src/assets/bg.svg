@@ -1,0 +1,17 @@
+<svg width="100%" height="100%" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="small" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#62C3B4" stroke-width="0.6"/>
+    </pattern>
+    <pattern id="big" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="120" fill="url(#small)"/>
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#62C3B4" stroke-width="1.2"/>
+    </pattern>
+  </defs>
+
+  <!-- Fundo verde escuro -->
+  <rect x="0" y="0" width="1920" height="1080" fill="#05987C"/>
+
+  <!-- Grid tamanho total -->
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#big)"/>
+</svg>
