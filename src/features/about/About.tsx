@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./about.css";
-import clip from "../assets/clipboard.png";
-import clipTop from "../assets/clipboardT.png";
-import me from "../assets/me.jpg";
+import clip from "../../assets/clipboard.png";
+import clipTop from "../../assets/clipboardT.png";
+import me from "../../assets/me.jpg";
 
 type ButtonProps = {
     onClick: () => void;
@@ -12,7 +12,7 @@ function Button({ onClick }: ButtonProps) {
     return (
         <button
             onClick={onClick}
-            className="absolute bottom-0 right-0 m-3 md:left-5/6 left-2/4 z-50 bg-orange-400 p-4 rounded-lg border-b-9 border-r-8 rounded-b-sm border-orange-700 text-white font-black text-lg hover:border-b-5 hover:border-r-4 hover:bg-orange-500 hover:translate-y-2 active:translate-y-3 transition-all duration-150 shadow-md"
+            className="absolute bottom-0 right-0 m-3 sm:left-5/6 left-2/4 z-50 bg-orange-400 p-4 rounded-lg border-b-9 border-r-8 rounded-b-sm border-orange-700 text-white font-black text-lg hover:border-b-5 hover:border-r-4 hover:bg-orange-500 hover:translate-y-2 active:translate-y-3 transition-all duration-150 shadow-md"
         >
             Sobre mim
         </button>
@@ -28,10 +28,11 @@ export function About() {
 
             {mostrar && (
                 <div className="fixed inset-0 flex items-center justify-center z-40 pointer-events-none">
-                    <div className="relative w-[min(400px,99vw)] h-[min(696px,85vh)] md:w-125 md:h-180 pointer-events-auto">
+                    <div className="relative w-[min(400px,99vw)] h-[min(696px,85vh)] sm:w-125 sm:h-180 pointer-events-auto">
                         <img
                             src={clipTop}
                             alt="Clipboard"
+                            loading="lazy"
                             className="absolute inset-0 w-full h-full rotate-6 z-20"
                         />
                         <div
@@ -48,6 +49,7 @@ export function About() {
                                 <img
                                     src={me}
                                     alt="me"
+                                    loading="lazy"
                                     className="w-2/4 shadow-lg rounded-ee-full shrink-0"
                                 />
                                 <h1 className="text-2xl sm:text-4xl font-bold">
@@ -81,6 +83,7 @@ export function About() {
                         <img
                             src={clip}
                             alt="Clipboard"
+                            loading="lazy"
                             className="absolute inset-0 w-full h-full rotate-6 z-0"
                         />
                     </div>
