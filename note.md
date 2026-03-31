@@ -1,0 +1,1 @@
+por algum motivo css s foram desligados. o de techs consegui voltar porem o de contact e about ainda nao ta cerrto. as cores de contact nao ta pegando e o grid junto do bg de about nao estao la

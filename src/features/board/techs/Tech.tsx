@@ -1,6 +1,7 @@
 import { FaArrowDownLong } from "react-icons/fa6";
 import note from "../../../assets/notea.png";
 import { useBoardStore } from "../boardStore";
+import "./tech.css"
 
 const techCards = {
     linguagem: [
@@ -109,15 +110,26 @@ export function Tech() {
     };
 
     return (
-        <section className="transition-all duration-500 ease-out hover:-translate-y-2 hover:rotate-1 cursor-pointer">
-            <h3 className="absolute mt-13 text-3xl font-bold -rotate-3">
-                Linguagens e Frameworks{" "}
-                <div onClick={handleClick} className="flex flex-row mt-15 w-full items-center gap-2 justify-center text-purple-400">
-                    <FaArrowDownLong className=" group-hover:animate-bounce" />
-                    <span className="text-lg font-regular">{isOpen ? "Fechar" : "Veja mais"}</span>
-                    <FaArrowDownLong className="group-hover:animate-bounce" />
-                </div>
+        <section className="tech-note relative transition-all duration-500 ease-out hover:-translate-y-2 hover:rotate-1">
+            <h3 className="absolute mt-11 px-6 text-3xl -rotate-3 tech-title">
+                <span className="tech-title-main">Linguagens</span>{" "}
+                <span className="tech-title-script">e Frameworks</span>
             </h3>
+
+            <button
+                type="button"
+                onClick={handleClick}
+                className="absolute mt-40 left-1/2 -translate-x-1/2 flex flex-row items-center gap-2 justify-center tech-more px-3 py-1.5 rounded-full"
+            >
+                <FaArrowDownLong
+                    className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                />
+                <span className="text-base">{isOpen ? "Fechar" : "Veja"}</span>
+                <FaArrowDownLong
+                    className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                />
+            </button>
+
             <img
                 src={note}
                 alt="imagem de uma nota adesiva"

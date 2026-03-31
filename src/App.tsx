@@ -1,6 +1,7 @@
 import './app.css'
 import { About } from './features/about/About';
 import { Board } from './features/board/Board';
+import { Info } from './features/info/Info';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </div>
       <Board />
       <About />
+      <Info />
     </main>
   )
 }
