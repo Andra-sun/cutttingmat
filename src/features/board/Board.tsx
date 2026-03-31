@@ -9,7 +9,6 @@ export function Board() {
       {cards.map((card) => (
         <Card key={card.id} card={card} />
       ))}
-
     </div>
   );
 }

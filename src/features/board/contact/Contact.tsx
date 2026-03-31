@@ -3,7 +3,7 @@ import "./contatos.css";
 
 export function Contact() {
     return (
-        <div>
+        <div >
             {/* <img src={titulo} alt="contato" /> */}
             <div className="text-red-500">
                 <h1 className="absolute mt-13 ml-22 text-5xl">Contatos</h1>
@@ -13,7 +13,7 @@ export function Contact() {
                     <a href="https://github.com/andra-sun" target="_blank" rel="noopener noreferrer">github.com/andra-sun</a>
                     <a href="https://linkedin.com/in/andra-sun" target="_blank" rel="noopener noreferrer" >linkedin.com/in/andra-sun</a>
                 </div>
-                <img src={paper} alt="contatos list" draggable="false"  className="w-90"/>
+                <img src={paper} alt="contatos list" draggable="false"  className="w-90 "/>
             </div>
         </div>
     );

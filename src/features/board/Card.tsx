@@ -25,7 +25,7 @@ export function Card({ card }: CardProps) {
       }}
       className="absolute cursor-grab active:cursor-grabbing"
     >
-      {Component ? <Component /> : <p>Component "{card.component}" não encontrado</p>}
+      {Component ? <Component techData={card.techData} /> : <p>...</p>}
     </motion.div>
   );
 }
