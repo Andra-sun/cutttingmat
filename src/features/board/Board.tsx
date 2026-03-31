@@ -1,6 +1,5 @@
 import { useBoardStore } from "./boardStore";
 import { Card } from "./Card";
-import { Contact } from "./contact/Contact";
 
 export function Board() {
   const cards = useBoardStore((s) => s.cards);
@@ -11,7 +10,6 @@ export function Board() {
         <Card key={card.id} card={card} />
       ))}
 
-      <Contact />
     </div>
   );
 }

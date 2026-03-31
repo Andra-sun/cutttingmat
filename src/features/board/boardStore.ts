@@ -1,22 +1,11 @@
 import { create } from "zustand";
-
-type CardType = {
-  id: string;
-  x: number;
-  y: number;
-};
-
-type BoardStore = {
-  cards: CardType[];
-  addCard: () => void;
-  moveCard: (id: string, x: number, y: number) => void;
-};
+import type { BoardStore } from "./cardProp";
 
 export const useBoardStore = create<BoardStore>((set, get) => ({
   cards: [
-    { id: "1", x: 100, y: 100 },
-    { id: "2", x: 300, y: 200 },
-    { id: "3", x: 500, y: 300 },
+    { id: "1", x: 1100, y: 80, component: "Contact" },
+    { id: "2", x: 100, y: 100, component: "Project"},
+
   ],
 
   addCard: () => {
@@ -24,7 +13,7 @@ export const useBoardStore = create<BoardStore>((set, get) => ({
     set((state) => ({
       cards: [
         ...state.cards,
-        { id, x: 200, y: 200 },
+        { id, x: 200, y: 200, component: "Contact" },
       ],
     }));
   },

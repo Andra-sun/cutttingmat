@@ -1,8 +1,15 @@
 import { motion } from "framer-motion";
-import { useBoardStore } from "./BoardStore";
+import { useBoardStore } from "./boardStore";
+import { componentRegistry } from "./componentRegistry";
+import type { CardType } from "./cardProp";
 
-export function Card({ card }) {
+type CardProps = {
+  card: CardType;
+};
+
+export function Card({ card }: CardProps) {
   const moveCard = useBoardStore((s) => s.moveCard);
+  const Component = componentRegistry[card.component];
 
   return (
     <motion.div
@@ -16,9 +23,9 @@ export function Card({ card }) {
           card.y + info.offset.y
         );
       }}
-      className="absolute bg-white text-black p-4 rounded-xl shadow-lg cursor-grab active:cursor-grabbing"
+      className="absolute cursor-grab active:cursor-grabbing"
     >
-      Card {card.id}
+      {Component ? <Component /> : <p>Component "{card.component}" não encontrado</p>}
     </motion.div>
   );
 }
