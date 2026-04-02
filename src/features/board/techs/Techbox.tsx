@@ -24,9 +24,17 @@ export function TechBox({ title, techs, boxImage }: TechBoxProps) {
     );
 
     return (
-        <div
+        <motion.div
             className="relative select-none"
             style={{ width: BOX_INNER_W + 50 }}
+            initial={{ y: -120, rotate: -2, scale: 0.98 }}
+            animate={{ y: 0, rotate: 0, scale: 1 }}
+            transition={{
+                type: "spring",
+                stiffness: 220,
+                damping: 18,
+                mass: 1.2,
+            }}
         >
             <img
                 src={boxImage}
@@ -114,6 +122,6 @@ export function TechBox({ title, techs, boxImage }: TechBoxProps) {
                     </motion.div>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 }

@@ -13,6 +13,7 @@ const linguagensEFrameworks = [
   { name: "Next.js", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
   { name: "Django", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" },
   { name: "Tailwind", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "Vite", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" },
 ];
 
 const ferramentas = [
@@ -26,6 +27,7 @@ const ferramentas = [
   { name: "Eclipse", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" },
   { name: "Cisco PT", image: "https://hurbad.com/wp-content/uploads/2021/12/Cisco-Packet-Tracer.png" },
   { name: "Gimp", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gimp/gimp-original.svg" },
+  { name: "Photoshop", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" },
 ];
 
 export const useBoardStore = create<BoardStore>((set) => ({
