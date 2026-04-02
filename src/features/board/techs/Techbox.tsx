@@ -18,8 +18,8 @@ const COLS = 4;
 export function TechBox({ title, techs, boxImage }: TechBoxProps) {
     const [positions, setPositions] = useState(() =>
         techs.map((_, i) => ({
-            x: 20 + (i % COLS) * ((BOX_INNER_W - 33 - ICON_W) / (COLS - 1)),
-            y: BOX_INNER_H / 2.4 + 50 + Math.floor(i / COLS) * 80,
+            x: 20 + (i % COLS) * ((BOX_INNER_W - 50 - ICON_W) / (COLS - 1)),
+            y: BOX_INNER_H / 2.33 + 55 + Math.floor(i / COLS) * 90,
         })),
     );
 
@@ -37,11 +37,9 @@ export function TechBox({ title, techs, boxImage }: TechBoxProps) {
             />
 
             <div
-                className="relative z-10 px-5 pt-4 pb-2"
+                className="absolute z-10 w-full text-center text-2xl font-bold mt-30"
                 style={{
                     fontFamily: "'Georgia', serif",
-                    fontSize: "14px",
-                    fontWeight: "bold",
                     color: "rgba(0,0,0,0.6)",
                     letterSpacing: "0.04em",
                     userSelect: "none",
@@ -64,10 +62,10 @@ export function TechBox({ title, techs, boxImage }: TechBoxProps) {
                         drag
                         dragMomentum={false}
                         dragConstraints={{
-                            top: 0,
-                            left: 10,
-                            right: BOX_INNER_W - ICON_W - 10,
-                            bottom: BOX_INNER_H - ICON_H - 60,
+                            top: 50,
+                            left: 16,
+                            right: BOX_INNER_W - ICON_W - 20,
+                            bottom: BOX_INNER_H - ICON_H - 29,
                         }}
                         dragElastic={0}
                         initial={{ x: positions[i].x, y: positions[i].y }}
@@ -87,7 +85,7 @@ export function TechBox({ title, techs, boxImage }: TechBoxProps) {
                                 return updated;
                             });
                         }}
-                        className="absolute flex flex-col items-center gap-0.5"
+                        className="absolute flex flex-col items-center gap-0.5 cursor-grabbing "
                         style={{ width: ICON_W, cursor: "grab", zIndex: 10 }}
                         whileDrag={{
                             scale: 1.15,
@@ -99,16 +97,16 @@ export function TechBox({ title, techs, boxImage }: TechBoxProps) {
                         <img
                             src={tech.image}
                             alt={tech.name}
-                            className="w-10 h-10 drop-shadow"
                             draggable="false"
+                            className="w-14 p-2 rounded-2xl -bg-linear-330 from-white/40 via-white/20 to-white backdrop-blur-md border border-white/30 shadow-lg hover:bg-white/30 transition"
                         />
                         <span
                             className="text-center font-semibold"
                             style={{
-                                fontSize: "9px",
+                                fontSize: "10px",
                                 color: "rgba(0,0,0,0.7)",
                                 maxWidth: ICON_W,
-                                lineHeight: 1.2,
+                                lineHeight: 1.4,
                             }}
                         >
                             {tech.name}

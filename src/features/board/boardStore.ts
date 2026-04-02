@@ -50,7 +50,7 @@ export const useBoardStore = create<BoardStore>((set) => ({
         {
           id: "techbox-linguagens",
           x: 120,
-          y: 280,
+          y: 30,
           component: "TechBox",
           techBoxData: {
             title: "Linguagens & Frameworks",
@@ -60,8 +60,8 @@ export const useBoardStore = create<BoardStore>((set) => ({
         },
         {
           id: "techbox-ferramentas",
-          x: 580,
-          y: 280,
+          x: 780,
+          y: 100,
           component: "TechBox",
           techBoxData: {
             title: "Ferramentas",
