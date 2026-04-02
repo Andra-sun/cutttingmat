@@ -6,7 +6,7 @@ export function Contact() {
         <div>
             <div className="contact-color">
                 <h1 className="absolute mt-13 ml-19 text-5xl">Contatos</h1>
-                <div className="grid text-left gap-6 absolute mt-40 ml-22">
+                <div className="grid text-left decoration-0 gap-6 absolute mt-40 ml-22">
                     <a
                         href="mailto:camilea_guimaraes@outlook.com"
                         className="-ml-[7.7px]"

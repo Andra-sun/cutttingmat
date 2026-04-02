@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+    --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+    --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, Consolas, monospace;
 
-  --spartan: "League Spartan", sans-serif;
-  --allura: "Damion", cursive;
+    --spartan: "League Spartan", sans-serif;
+    --allura: "Damion", cursive;
 }
 /* 
 .league-spartan-<uniquifier> {
@@ -16,39 +16,75 @@
   font-style: normal;
 } */
 
-
 #root {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  text-align: center;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  background-image: url('assets/bg.svg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-image: url("assets/bg.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 body {
-  margin: 0;
-  overflow: hidden;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+@layer base {
+  html {
+    cursor: url('/cursor32/cursor__0002_default.png') 0 0, default;
+  }
+
+  a, button, [role="button"] {
+    cursor: url('/cursor32/cursor__0000_pointer.png') 0 0, pointer;
+  }
+}
+
+@layer utilities {
+  .cursor-pointer {
+    cursor: url('/cursor32/cursor__0000_pointer.png') 0 0, pointer !important;
+  }
+
+  .cursor-grab {
+    cursor: url('/cursor32/cursor__0006_grab.png') 16 16, grab !important;
+  }
+
+  .cursor-grabbing {
+    cursor: url('/cursor32/cursor__0003_grabbing.png') 16 16, grabbing !important;
+  }
+
+  .cursor-text {
+    cursor: url('/cursor32/cursor__0004_text.png') 16 16, text !important;
+  }
+
+  .cursor-wait {
+    cursor: url('/cursor32/cursor__0001_wait.png') 16 16, wait !important;
+  }
+
+  .cursor-not-allowed {
+    cursor: url('/cursor32/cursor__0005_not-allowed.png') 16 16, not-allowed !important;
+  }
 }
 
 code,
 .counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+    font-family: var(--mono);
+    display: inline-flex;
+    border-radius: 4px;
+    color: var(--text-h);
 }
 
 code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+    font-size: 15px;
+    line-height: 135%;
+    padding: 4px 8px;
+    background: var(--code-bg);
 }

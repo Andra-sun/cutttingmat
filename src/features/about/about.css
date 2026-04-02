@@ -1,9 +1,54 @@
-p {
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: 500;
+.about-p {
+    margin-bottom: 12px;
+    font-size: clamp(14px, 1.55vw, 18px);
+    font-weight: 600;
     font-family: var(--spartan);
+    color: #1f2937;
 }
-h1 {
+.about-title {
     font-family: var(--spartan);
+    color: black !important;
+    line-height: 1.05;
+}
+
+.about-tab {
+    letter-spacing: 0.04em;
+}
+
+.about-note {
+    background:
+        linear-gradient(0deg, rgba(250, 204, 21, 0.9), rgba(245, 158, 11, 0.9)),
+        repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.04) 0px,
+            rgba(0, 0, 0, 0.04) 1px,
+            transparent 1px,
+            transparent 22px
+        );
+    border: 1px solid rgba(120, 53, 15, 0.25);
+}
+
+.about-grid {
+    background-image:
+        linear-gradient(to right, rgba(0, 255, 200, 0.16) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 255, 200, 0.16) 1px, transparent 1px);
+    background-size: 16px 16px;
+    mix-blend-mode: multiply;
+}
+
+.about-hud {
+    color: #0f766e;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.about-photo {
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    outline: 1px solid rgba(0, 0, 0, 0.2);
+    transform: rotate(-2deg);
+}
+.about-footnote {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #334155;
 }

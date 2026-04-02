@@ -23,7 +23,7 @@ export function Info() {
         <section className="info-root">
             <button
                 type="button"
-                className="info-button"
+                className="info-button cursor-pointer"
                 onClick={() => setIsOpen(true)}
             >
                 <IoInformationCircle size={20} />
@@ -43,7 +43,7 @@ export function Info() {
                             <h1>Sobre o Site</h1>
                             <button
                                 type="button"
-                                className="info-close"
+                                className="info-close cursor-pointer"
                                 onClick={() => setIsOpen(false)}
                                 aria-label="Fechar card de informacoes"
                             >
