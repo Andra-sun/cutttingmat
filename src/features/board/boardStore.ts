@@ -30,6 +30,22 @@ const ferramentas = [
   { name: "Photoshop", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" },
 ];
 
+const getTechBoxPositions = () => {
+  const isMobile = window.innerWidth < 768;
+  
+  if (isMobile) {
+    return {
+      box1: { x: 20, y: 30 },
+      box2: { x: 20, y: 350 },
+    };
+  }
+  
+  return {
+    box1: { x: 120, y: 30 },
+    box2: { x: 780, y: 100 },
+  };
+};
+
 export const useBoardStore = create<BoardStore>((set) => ({
   cards: [
     { id: "1", x: 1100, y: 80, component: "Contact" },
@@ -46,13 +62,14 @@ export const useBoardStore = create<BoardStore>((set) => ({
       cards: state.cards.map((c) => (c.id === id ? { ...c, x, y } : c)),
     })),
   addTechCards: () => {
+    const positions = getTechBoxPositions();
     set((state) => ({
       cards: [
         ...state.cards,
         {
           id: "techbox-linguagens",
-          x: 120,
-          y: 30,
+          x: positions.box1.x,
+          y: positions.box1.y,
           component: "TechBox",
           techBoxData: {
             title: "Linguagens & Frameworks",
@@ -62,8 +79,8 @@ export const useBoardStore = create<BoardStore>((set) => ({
         },
         {
           id: "techbox-ferramentas",
-          x: 780,
-          y: 100,
+          x: positions.box2.x,
+          y: positions.box2.y,
           component: "TechBox",
           techBoxData: {
             title: "Ferramentas",
