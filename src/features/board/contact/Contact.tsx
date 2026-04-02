@@ -1,11 +1,14 @@
 import paper from "../../../assets/contatoborda.png";
+import { useTranslation } from "../../../hooks/useTranslation";
 import "./contatos.css";
 
 export function Contact() {
+      const { t } = useTranslation();
+
     return (
         <div>
             <div className="contact-color">
-                <h1 className="absolute mt-13 ml-19 text-5xl">Contatos</h1>
+                <h1 className="absolute mt-13 ml-19 text-5xl">{t("contato.title")}</h1>
                 <div className="grid text-left decoration-0 gap-6 absolute mt-40 ml-22">
                     <a
                         href="mailto:camilea_guimaraes@outlook.com"

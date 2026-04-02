@@ -1,0 +1,19 @@
+{
+    "contato": {
+        "title": "Contatos"
+    },
+    "sobre": {
+        "title": "Sobre mim",
+        "ola": "Olá, tudo bem?",
+        "intro": {
+            "before": "Me chamo",
+            "middle": "porém na internet sou conhecida como"
+        },
+        "study": "Estudo programação desde o ensino médio e agora estou me graduando em Análise e Desenvolvimento de sistemas.",
+        "front":{
+            "before": "Desde o início o que eu mais gosto de fazer é o"
+        },
+        "challenge": "Adoro me desafiar e fazer/aprender coisas novas.",
+        "footer": "Dê uma explorada pelo meu portfólio para saber mais."
+    }
+}

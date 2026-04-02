@@ -1,0 +1,19 @@
+{
+    "contato": {
+        "title": "Contacts"
+    },
+    "sobre": {
+        "title": "About me",
+        "ola": "Hello, how are you?",
+        "intro": {
+            "before": "My name is",
+            "middle": "but on the internet I am known as"
+        },
+        "study": "I have been studying programming since high school and I am now pursuing a degree in Systems Analysis and Development.",
+        "front": {
+            "before": "Since the beginning, what I enjoy the most is"
+        },
+        "challenge": "I love challenging myself and learning new things.",
+        "footer": "Feel free to explore my portfolio to learn more."
+    }
+}
