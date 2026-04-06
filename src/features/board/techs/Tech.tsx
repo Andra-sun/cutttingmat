@@ -2,11 +2,13 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import note from "../../../assets/notea.png";
 import { useBoardStore } from "../boardStore";
 import "./tech.css";
+import { useTranslation } from "../../../hooks/useTranslation";
 
 export function Tech() {
     const addTechCards = useBoardStore((s) => s.addTechCards);
     const removeTechCards = useBoardStore((s) => s.removeTechCards);
     const cards = useBoardStore((s) => s.cards);
+    const {t} = useTranslation();
 
     const isOpen = cards.some((c) => c.component === "TechBox");
 
@@ -21,10 +23,10 @@ export function Tech() {
     return (
         <section className="tech-note relative transition-all duration-500 ease-out hover:-translate-y-2 hover:rotate-1">
             <h3 className="absolute mt-11 px-6 text-3xl -rotate-3 tech-title">
-                <span className="tech-title-main">Linguagens</span>{" "}
-                <span className="tech-title-script">e Frameworks</span>{" "}
+                <span className="tech-title-main">{t("linguagens.linguagens")}</span>{" "}
+                <span className="tech-title-script">{t("linguagens.e")} Frameworks</span>{" "}
             </h3>
-                <span className="text-sm text-gray-700 pt-20 absolute mt-11  -rotate-3 ">*e ferramentas</span>
+                <span className="text-sm text-gray-700 pt-20 absolute mt-11  -rotate-3 ">{t("linguagens.ferramentas")}</span>
 
             <button
                 type="button"
@@ -34,7 +36,7 @@ export function Tech() {
                 <FaArrowDownLong
                     className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
                 />
-                <span className="text-base">{isOpen ? "Fechar" : "Veja"}</span>
+                <span className="text-base">{isOpen ? t("linguagens.fechar") : t("linguagens.ver")}</span>
                 <FaArrowDownLong
                     className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
                 />

@@ -6,7 +6,7 @@ export function Contact() {
       const { t } = useTranslation();
 
     return (
-        <div>
+        <div id="contatos">
             <div className="contact-color">
                 <h1 className="absolute mt-13 ml-19 text-5xl">{t("contato.title")}</h1>
                 <div className="grid text-left decoration-0 gap-6 absolute mt-40 ml-22">

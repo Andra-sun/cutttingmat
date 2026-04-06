@@ -15,5 +15,37 @@
         },
         "challenge": "I love challenging myself and learning new things.",
         "footer": "Feel free to explore my portfolio to learn more."
+    },
+    "projetos": {
+        "projetos": "Projects",
+        "verMais": "View Github",
+        "verMaisPag": "View Page",
+        "bookGuadianDes": "Book Guardian is a website developed for an academic project. It serves as a personal library where you can register your books, organize them, and easily view them in a list format.",
+        "adotDes": "The Adote um Pet is a semifinalist project in a competition among colleges of the Anima group. This project is a website that facilitates the promotion of animals available for adoption, connecting potential adopters with pets in need of a loving home.",
+        "sharkDes": "Shark is a blog where I post topics that I am studying. Each post contains detailed explanations and is well organized to make it easy to find information according to each subject.",
+        "lingefr": "Frameworks & Languages",
+        "ferramenta": "Tools",
+        "beefleet": "BeeFleet is a fleet management system developed as an academic project. The platform enables the registration and control of vehicles and drivers, offering features such as report generation and data visualization through graphs. Users can efficiently track and manage vehicle lending and return events."
+    },
+    "linguagens": {
+        "linguagens": "Languages",
+        "e": "&",
+        "ferramentas": "*and tools",
+        "fechar": "Close",
+        "ver": "See",
+        "Ferramentas2": "Ferramentas"
+    },
+    "info": {
+        "button": "Info",
+        "title": "About the Site",
+        "close": "Close information",
+        "closeCard": "Close information card",
+        "items": {
+            "drag": "Items can be dragged anywhere on the screen.",
+            "aboutEsc": "The About Me section can be closed with the Esc key.",
+            "modalEsc": "This panel can also be closed with Esc.",
+            "reset": "When reloading the page, items are reset.",
+            "loading": "Some images may take time to load."
+        }
     }
 }

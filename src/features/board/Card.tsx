@@ -5,6 +5,7 @@ import type { CardType } from "./cardProp";
 import box1img from "../../assets/caixas_0000_box1.png";
 import box2img from "../../assets/caixas_0001_box2.png";
 import { useRef } from "react";
+import { useTranslation } from "../../hooks/useTranslation";
 
 type CardProps = {
     card: CardType;
@@ -19,6 +20,7 @@ export function Card({ card }: CardProps) {
     const moveCard = useBoardStore((s) => s.moveCard);
     const Component = componentRegistry[card.component];
     const elementRef = useRef<HTMLDivElement>(null);
+    const { t } = useTranslation();
 
     const getDragConstraints = () => {
         if (!elementRef.current) {
@@ -66,7 +68,8 @@ export function Card({ card }: CardProps) {
         >
             {Component ? (
                 <Component
-                    techData={card.techData}
+                    t={t}
+                    {...(card.projectData ? { project: card.projectData } : {})}
                     {...(card.techBoxData
                         ? {
                               title: card.techBoxData.title,

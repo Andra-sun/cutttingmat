@@ -1,0 +1,38 @@
+.note {
+    filter: hue-rotate(106deg) drop-shadow(0 9px 14px rgba(0, 0, 0, 0.24));
+}
+.project-title {
+    color: #5b2e0f;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+    line-height: 0.95;
+    font-family: var(--spartan);
+    font-weight: 900;
+}
+
+.project-more {
+    color: #ffffff;
+    background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
+    border-top: 1px solid #93c5fd;
+    border-left: 1px solid #93c5fd;
+    border-right: 4px solid #1d4ed8;
+    border-bottom: 6px solid #1e40af;
+    box-shadow: 0 4px 10px rgba(30, 64, 175, 0.25);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    transition:
+        transform 120ms ease,
+        filter 120ms ease,
+        background-color 120ms ease;
+}
+
+.project-more:hover {
+    filter: brightness(1.05);
+    transform: translateY(1px);
+}
+
+.project-more:active {
+    transform: translateY(3px);
+    border-right-width: 2px;
+    border-bottom-width: 3px;
+    box-shadow: 0 2px 6px rgba(76, 29, 149, 0.2);
+}

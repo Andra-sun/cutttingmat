@@ -10,10 +10,42 @@
             "middle": "porém na internet sou conhecida como"
         },
         "study": "Estudo programação desde o ensino médio e agora estou me graduando em Análise e Desenvolvimento de sistemas.",
-        "front":{
+        "front": {
             "before": "Desde o início o que eu mais gosto de fazer é o"
         },
         "challenge": "Adoro me desafiar e fazer/aprender coisas novas.",
         "footer": "Dê uma explorada pelo meu portfólio para saber mais."
+    },
+    "projetos": {
+        "projetos": "Projetos",
+        "verMais": "Ver Github",
+        "verMaisPag": "Ver Pagina",
+        "beefleet": "O BeeFleet é um sistema de gerenciamento de frota desenvolvido como projeto acadêmico. A plataforma permite o cadastro e controle de veículos e motoristas, oferecendo recursos como geração de relatórios e visualização de gráficos. Os usuários podem registrar e acompanhar eventos de empréstimo e devolução dos veículos de forma eficiente.",
+        "bookGuadianDes": "O Book Guardian é um site desenvolvido para um projeto acadêmico. Ele funciona como uma biblioteca pessoal, onde você pode cadastrar seus livros, organizá-los e visualizá-los em uma lista de fácil acesso.",
+        "adotDes": "O Adote um Pet é um projeto semifinalista em uma competição entre faculdades do grupo Anima. Este projeto é um site que facilita a divulgação de animais disponíveis para adoção, conectando potenciais adotantes a pets que precisam de um lar amoroso.",
+        "sharkDes": "O Shark é um blog onde eu posto assuntos que estou estudando. Cada post contém explicações detalhadas e está bem organizado para que seja fácil encontrar informações de acordo com cada matéria.",
+        "pixelDes": "O pixelMart é um projeto de e-commerce desenvolvido em grupo para aprimorar nossas skills de programação e trabalho em equipe. O site é uma plataforma de vendas de produtos.",
+        "lingefr": "Linguagem e Framework",
+        "ferramenta": "Ferramentas"
+    },
+    "linguagens": {
+        "linguagens": "Linguagens",
+        "e": "e",
+        "ferramentas": "*e ferramentas",
+        "fechar": "Fechar",
+        "ver": "Veja"
+    },
+    "info": {
+        "button": "Informações",
+        "title": "Sobre o Site",
+        "close": "Fechar informações",
+        "closeCard": "Fechar card de informações",
+        "items": {
+            "drag": "Os itens podem ser arrastados por toda a tela.",
+            "aboutEsc": "O Sobre Mim pode ser fechado com a tecla Esc.",
+            "modalEsc": "Esta tela também pode ser fechada com Esc.",
+            "reset": "Ao recarregar a página, os itens são resetados.",
+            "loading": "Algumas imagens podem demorar para carregar."
+        }
     }
 }
